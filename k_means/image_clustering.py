@@ -15,4 +15,5 @@ kmeans_cluster.fit(image_2d)
 cluster_centers = kmeans_cluster.cluster_centers_
 cluster_labels = kmeans_cluster.labels_
 plt.imshow((cluster_centers[cluster_labels].reshape(x, y, z) * 255).astype(np.uint8))
+plt.savefig('clustered.png')
 plt.show()
